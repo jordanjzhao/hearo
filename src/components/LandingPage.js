@@ -1,5 +1,5 @@
 import React from "react";
-import hearoLogoMain from "../images/hearoLogoMain.png";
+import hearoLogoMain from "../images/hearoLogoMain.svg";
 import landingVector from "../images/landingVector.svg";
 
 export default function LandingPage() {
