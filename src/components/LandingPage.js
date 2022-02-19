@@ -9,10 +9,10 @@ export default function LandingPage() {
                 <img className="landing--logo" src={hearoLogoMain}/>
             </header>
             <main>
-                <form className="form">
+                <div className="container">
                 <img className="landing--vector" src={landingVector}/>
                 <button className="form--startButton">Tap to Start</button>
-                </form>
+                </div>
             </main>
         </div>
     )
