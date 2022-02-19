@@ -28,19 +28,7 @@ code {
   position: relative;
   width: 100%;
 }
-/*
-.form--startButton {
-  color: white;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #1f3566 1.14%, #1f3566 100%);
-  position: relative;
-  cursor: pointer;
-  width: 250px;
-  height: 50px;
-  top: 605px;
-  left: 70px;
-}
-*/
+
 .form--startButton {
   position: absolute;
   top: 50%;
