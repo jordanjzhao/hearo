@@ -16,4 +16,3 @@ $ cd client
 $ npm start
 ```
 
-test
