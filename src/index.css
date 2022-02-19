@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header--logo {
+  position: relative;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  left: 70px;
+  top: 98px;
+}
+
+.landing--vector {
+  min-width: 100%;
+}
+
+.form {
+  display: grid;
+  text-align: center;
+  item-align: center;
+}
+
+.form--startButton {
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #1f3566 1.14%, #1f3566 100%);
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  top: 605px;
+  left: 70px;
+}
