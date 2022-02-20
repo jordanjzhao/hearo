@@ -1,6 +1,7 @@
 import React from "react";
 import hearoLogoMain from "../images/hearoLogoMain.svg";
 import landingVector from "../images/landingVector.svg";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
     return (
@@ -11,7 +12,9 @@ export default function LandingPage() {
             <main>
                 <div className="container">
                 <img className="landing--vector" src={landingVector}/>
-                <button className="form--startButton">Tap to Start</button>
+                <Link to="/textStart">
+                    <button className="form--startButton">Tap to Start</button>
+                </Link>
                 </div>
             </main>
         </div>
