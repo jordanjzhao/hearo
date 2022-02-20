@@ -9,3 +9,31 @@ hearo is an app designed to solve the problems that arise from hearing aid failu
 In the case that an individuals hearing aid fails, this would cause auditory failure seen in communication with others. The app solves this problem by allowing the individual to quickly resolve hearing failures through means of a visual speech to text stream. It lets the user rely on their other senses to make communication still possible.
 
 With a click of a button, the hearo app initilizes a speech to text stream that picks up the communication heard and produces streamed text such that the individual can read it.
+
+
+## User Processes and Commands
+
+# react
+npm start
+
+# ngrok 
+ngrok http 8080
+
+# twilio
+twilio login
+  - enter Account SID
+  - enter Auth Token
+twilio phone-numbers:update <My Twilio phone number> --voice-url $NGROK_HTTP_URL <https forwarding address>
+  - example: twilio phone-numbers:update 19036367863 --voice-url $NGROK_HTTP_URL https://fa6c-2001-569-5290-6d00-a9e1-3ec6-30c6-2148.ngrok.io
+export APIKEY=a4ff8dc365514a9784506c9ff341126c
+npm install express ws wavefile
+re-direct to project folder
+node transcribe.js
+  
+Dial <My Twilio phone number>
+  
+Tap to Start
+Text Streams Speech to Text
+End Stream 
+  
+Finish
