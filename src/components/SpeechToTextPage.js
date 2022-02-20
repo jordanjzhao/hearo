@@ -1,29 +1,41 @@
-import React from "react";
 import hearoLogoWhite from "../images/hearoLogoWhite.svg";
 import barVector from "../images/barVector.svg";
 import textDisplay from "../images/textDisplay.svg";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import { makeStyles } from '@mui/styles';
+import React, { useEffect } from 'react';
 
-const useStyles = makeStyles({
-    textField: {
-        width: "120vh",
-    },
-    center: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: "5vh"
+const initWebsocket = () => {
+    window.ws = new WebSocket(`ws://localhost:8080`,)
+    const ws = window.ws
+    ws.onopen = () => {
+      ws.send(JSON.stringify({ isReactClient: true }))
+      console.log('Websocket connected')
     }
-})
+  
+    return ws
+  }
 
 export default function SpeechToTextPage() {
-    const classes = useStyles();
     const [inputMsg, setInputMsg] = useState("");
 
+    const [transcribedMsg, setTranscribedMsg] = useState('Start speaking')
+
+    useEffect(() => {
+      if (!window.ws) {
+        const ws = initWebsocket()
+    
+        ws.onmessage = (msg) => {
+          console.log(msg.data)
+          setInputMsg(msg.data)
+          //setTranscribedMsg(msg.data)
+        }
+      }
+  
+      //return window.ws.close()
+    }, [])
+
     const handleTypeInputMsg = (event) => {
-        console.log(event.target.value);
         setInputMsg(event.target.value);
     }
 
@@ -34,12 +46,12 @@ export default function SpeechToTextPage() {
                 <img className="stt--logo" src={hearoLogoWhite} />
             </header>
             <main>
-                <h1>Click Link to Start</h1>
+                <h1>Connecting to Stream ... </h1>
                 <div className="stt--container">
                 <textarea rows = "20" cols = "60" id="textbodid" className="stt--textDisplay" 
                 placeholder="Text will stream shortly..."
                 value={inputMsg}
-                onChange={handleTypeInputMsg}>
+                >
                 </textarea>
                 </div>
                 <Link to="/">
