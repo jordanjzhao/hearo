@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+/*
 const initWebsocket = () => {
   window.ws = new WebSocket(`wss://localhost:8080`)
   const ws = window.ws
@@ -29,3 +30,4 @@ function SpeechToTextApp() {
   }, [])
 }
 
+*/
