@@ -11,6 +11,10 @@
     "ngrok": "^4.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
+=======
+    "react-router": "^6.2.1",
+>>>>>>> d1093067c5507fbe349e9b6e496e8eabc03e960c
     "react-router-dom": "^6.2.1",
     "react-scripts": "^5.0.0",
     "wavefile": "^11.0.0",
