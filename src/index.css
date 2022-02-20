@@ -44,6 +44,44 @@ code {
   border-radius: 5px;
 }
 
-.form.-startButton:hover {
+.form--startButton:hover {
+  background-color: black;
+}
+
+.header--stt {
+  position: relative;
+  width: 100%;
+}
+
+.stt--vector {
+  min-width: 100%;
+}
+
+.stt--logo {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.stt--endButton {
+  position: relative;
+  background-color: #1f3566;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.stt--endButton:hover {
   background-color: black;
 }
