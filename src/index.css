@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header--logo {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  top: 98px;
+}
+
+.landing--vector {
+  min-width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.form--startButton {
+  position: absolute;
+  width: 260px;
+  height: 160px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #1f3566;
+  color: white;
+  font-size: 45px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form--startButton:hover {
+  background-color: black;
+}
+
+.header--stt {
+  position: relative;
+  width: 100%;
+}
+
+.stt--vector {
+  min-width: 100%;
+}
+
+.stt--logo {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.stt--endButton {
+  position: relative;
+  background-color: #1f3566;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.stt--endButton:hover {
+  background-color: black;
+}
+
+.stt--textDisplay {
+  height: 500px;
+  width: 300px;
+  font-size: 14pt;
+}
