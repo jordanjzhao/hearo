@@ -20,8 +20,6 @@ export default function SpeechToTextPage() {
                 <button className="stt--endButton">End Stream</button>
                 </Link>
             </main>
-
-
         </div>
     )
 }
