@@ -3,12 +3,17 @@ import "./index.css";
 import React from "react";
 import LandingPage from "./components/LandingPage";
 import SpeechToTextPage from './components/SpeechToTextPage';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
-      <SpeechToTextPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/start" element={<SpeechToTextPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
