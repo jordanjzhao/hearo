@@ -1,7 +1,8 @@
 # hearo: StormHacks 2022
 
-## Jordan Zhao, Sophia Kim, Daniel Kim, Johnathan Tam
+Jordan Zhao, Sophia Kim, Daniel Kim, Johnathan Tam
 
+## App Functionality
 
 hearo is an app designed to solve the problems that arise from hearing aid failures. This tool provides accessibilty and functinality in the day to day and promotes independent living in individuals with hearing impairments. 
 
