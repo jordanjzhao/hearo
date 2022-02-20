@@ -39,10 +39,10 @@ wss.on("connection", (ws) => {
               msg += ` ${texts[key]}`;
             }
           }
-      	  //console.log(msg);
-         // if (reactClient) {
-         //   reactClient.send(msg)
-         // }
+      	console.log(msg);
+        if (reactClient) {
+        reactClient.send(msg)
+          }
         };
 
         break;
