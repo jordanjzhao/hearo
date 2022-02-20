@@ -23,7 +23,7 @@ ngrok http 8080
 twilio login
   - enter Account SID
   - enter Auth Token
-twilio phone-numbers:update <My Twilio phone number> --voice-url $NGROK_HTTP_URL <https forwarding address>
+twilio phone-numbers:update (My Twilio phone number) --voice-url $NGROK_HTTP_URL (https forwarding address)
   - example: twilio phone-numbers:update--voice-url $NGROK_HTTP_URL https://fa6c-2001-569-5290-6d00-a9e1-3ec6-30c6-2148.ngrok.io
 export APIKEY
 npm install express ws wavefile
