@@ -15,14 +15,14 @@ wss.on("connection", (ws) => {
   console.info("New Connection Initiated");
 
   ws.on("message", (message) => {
-    if (msg.isReactClient) {
-      console.log('React Client connected')
-      reactClient = ws
-    } else if (!assembly)
-      return console.error("AssemblyAI's WebSocket must be initialized.");
-
     const msg = JSON.parse(message);
-
+    
+    if (msg.isReactClient) {
+      console.log('React client is connected')
+      reactClient = ws
+    } else if (!assembly) {
+      return console.error("AssemblyAI's WebSocket must be initialized.");
+    } 
     switch (msg.event) {
       case "connected":
         console.info("A new call has started.");
@@ -39,9 +39,9 @@ wss.on("connection", (ws) => {
               msg += ` ${texts[key]}`;
             }
           }
-      	  console.log(msg);
-          if (reactClient) {
-            reactClient.send(msg)
+      	console.log(msg);
+        if (reactClient) {
+        reactClient.send(msg)
           }
         };
 
