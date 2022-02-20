@@ -1,5 +1,5 @@
 import React from "react";
-import hearoLogoMain from "../images/hearoLogoMain.png";
+import hearoLogoMain from "../images/hearoLogoMain.svg";
 import landingVector from "../images/landingVector.svg";
 
 export default function LandingPage() {
@@ -9,10 +9,10 @@ export default function LandingPage() {
                 <img className="landing--logo" src={hearoLogoMain}/>
             </header>
             <main>
-                <form className="form">
+                <div className="container">
                 <img className="landing--vector" src={landingVector}/>
                 <button className="form--startButton">Tap to Start</button>
-                </form>
+                </div>
             </main>
         </div>
     )

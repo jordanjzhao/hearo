@@ -1,4 +1,4 @@
-# Hearo: StormHacks 2022
+# hearo: StormHacks 2022
 
 ## Jordan Zhao, Sophia Kim, Daniel Kim, Johnathan Tam
 
