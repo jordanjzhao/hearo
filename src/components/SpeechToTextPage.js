@@ -14,7 +14,8 @@ export default function SpeechToTextPage() {
             <main>
                 <h1>Click Link to Start</h1>
                 <div className="stt--container">
-                <img className="stt--textDisplay" src={textDisplay}/>
+                <textarea rows = "20" cols = "60" id="textbodid" className="stt--textDisplay" placeholder="Text will stream shortly...">
+                </textarea>
                 </div>
                 <Link to="/">
                 <button className="stt--endButton">End Stream</button>
