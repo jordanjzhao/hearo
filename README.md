@@ -10,6 +10,7 @@ In the case that an individuals hearing aid fails, this would cause auditory fai
 
 With a click of a button, the hearo app initilizes a speech to text stream that picks up the communication heard and produces streamed text such that the individual can read it.
 
+https://www.youtube.com/watch?v=R1FCYDOVmH4
 
 ## User Processes and Commands
 
